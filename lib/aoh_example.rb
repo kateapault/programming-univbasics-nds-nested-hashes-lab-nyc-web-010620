@@ -16,7 +16,7 @@ end
 def literal_aoh
   # Using Array literal syntax only, build a nested array that uses the data in
   # held in the constants
-  nested_array = []
+  main_array = [DON_G, JOELLE_VD, PAT_M, KATE_G, BRUCE_G]
 end
 
 def aoh_lookup(aoh, row, key)
@@ -27,4 +27,5 @@ def aoh_update(aoh, row, key, new_value)
   # Update the AoH data at row and key to have the value of new_value
   # Return the updated AoH
   aoh[row][key] = new_value
+  aoh
 end
